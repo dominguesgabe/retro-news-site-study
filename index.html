@@ -1,15 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Sul in foco</title>
 </head>
 <body>
-    <div>
-        hello
-    </div>
+    <nav class="drop-shadow">
+        <ul class="container-flex">
+            <li>
+                <a>
+                    Quem Somos
+                </a>
+            </li>
+            <li>
+                <a>
+                    Notícias
+                </a>
+            </li>
+            <li>
+                <a>
+                    Mais Lidas
+                </a>
+            </li>
+            <li>
+                <a>
+                    Vídeos
+                </a>
+            </li>
+            <li>
+                <a>
+                    Fotos
+                </a>
+            </li>
+            <li>
+                <a>
+                    Enquetes
+                </a>
+            </li>
+            <li>
+                <a>
+                    Anuncie
+                </a>
+            </li>
+            <li>
+                <a>
+                    Previsão do tempo
+                </a>
+            </li>
+            <li>
+                <a>
+                    Fale Conosco
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <div class="logo-main-banner">
+            <div>
+                <img src="images/logo.png" alt="Logotipo">
+            </div>
+            <div>
+                <img src="images/comat.png" alt="banner">
+            </div>
+        </div>
+        <div class="search-bar">
+            <div class="container-flex">
+                <div class="search">
+                    <button class="editoriais">Editoriais <i class="fa-solid fa-caret-down"></i></button>
+                    <label for="search">
+                        <input type="text" name="search" id="search">
+                        <button type="submit" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i> BUSCAR</button>
+                    </label>
+                </div>
+                <div class="social">
+                    <img src="images/yt.png" alt="youtube">
+                    <img src="images/fb.png" alt="facebook">
+                    <img src="images/twitter.png" alt="twitter">
+                    <img src="images/rss.png" alt="rss">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <div class="line-spacing">
+            <img src="images/passaporte-unisul.png" alt="passaporte unisul" >
+        </div>
+        <article class="line-spacing">
+            <div class="main-article">
+                <img src="images/noticia-futebol.png" alt="notícia sobre futebol">
+                <h2 class="category">Futebol</h2>
+                <p class="title">Hercílio e Atlético Tubarão estudam fusão em único time</p>
+                <p class="secondary-content">
+                    Vôlei de Tubarão vai bem no JASC em Criciúma
+                </p>
+                <p class="secondary-content">
+                    Passeio ciclístico movimenta Criciúma no último Sábado
+                </p>
+            </div>
+
+        </article>
+    </main>
+
 </body>
 </html>
