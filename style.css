@@ -3,6 +3,9 @@
     --gray: #676767;
     --yellow: #e6ba3d;
 }
+body {
+    background: url('images/bg-circle.png') no-repeat 86% 0%;
+}
 .drop-shadow {
     background-color: #fff;
     box-shadow: 5px 6px 15px -3px rgba(31,59,120,0.3);
@@ -18,9 +21,20 @@
     justify-content: space-between;
     width: 947px;
 }
-
-ul li a {
+.nav-link {
     cursor: pointer;
+    color: 1f3b78;
+}
+.nav-link li::after {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    margin-left: 13px;
+    background-color: #1f3b78;
+}
+.nav-link li:last-child::after {
+    display: none;
 }
 .logo-main-banner {
     display: flex;
@@ -58,18 +72,15 @@ ul li a {
     background-color: #1f3b78;
     color: #fff;
 }
-
 .main-article img{
     float: left;
     margin-right: 10px;
 }
-
 .main-article .category{
     font-size: 0.875em;
     font-weight: normal;
     padding-top: 5px;
 }
-
 .main-article .title{
     color: #e6ba3d;
     font-size: 1.5em;
@@ -77,7 +88,6 @@ ul li a {
     letter-spacing: 0.03em;
     font-weight: normal;
 }
-
 .main-article .secondary-content{
     font-size: 0.875em;
     line-height: 16px;
