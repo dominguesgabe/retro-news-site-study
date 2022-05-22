@@ -21,9 +21,10 @@ body {
   justify-content: space-between;
   width: 947px;
 }
-.nav-link {
+.nav-link a{
   cursor: pointer;
-  color: 1f3b78;
+  color: #1f3b78;
+  text-decoration: none;
 }
 .nav-link li::after {
   content: "";
@@ -43,13 +44,16 @@ body {
   width: 947px;
   margin: 0 auto;
 }
+.search {
+    display: flex;
+}
 .search-bar {
   background: rgb(31, 60, 120);
   background: linear-gradient(
     180deg,
     rgba(31, 60, 120, 1) 13%,
-    rgba(59, 85, 139, 1) 50%,
-    rgba(31, 60, 120, 1) 53%
+    rgba(59, 85, 139, 1) 54%,
+    rgba(31, 60, 120, 1) 55%
   );
   height: 45px;
   display: flex;
@@ -121,8 +125,8 @@ body {
   background: linear-gradient(
     180deg,
     rgba(31, 60, 120, 1) 13%,
-    rgba(59, 85, 139, 1) 50%,
-    rgba(31, 60, 120, 1) 53%
+    rgba(59, 85, 139, 1) 54%,
+    rgba(31, 60, 120, 1) 55%
   );
   color: #fff;
   float: left;
@@ -142,6 +146,7 @@ body {
   line-height: 24px;
   letter-spacing: 0.03em;
   font-weight: normal;
+  cursor: pointer;
 }
 .main-article .secondary-content {
   font-size: 0.875em;
@@ -152,21 +157,24 @@ body {
 /*200x143*/
 
 .side-news-container {
-  width: 140px;
-  display: inline-block;
-  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 310px;
+  float: right;
 }
 .side-news {
-    font-size: 0.875em;
+  font-size: 0.875em;
+  width: 140px;
 }
 .side-news .city {
-    margin-top: -5px;
-    color: #666;
+  margin-top: -5px;
+  color: #666;
 }
 .side-news i::before {
-    color: #666;
+  color: #666;
 }
 .side-news a {
-    font-size: 1em;
-    text-decoration: none;
+  font-size: 1em;
+  text-decoration: none;
 }
