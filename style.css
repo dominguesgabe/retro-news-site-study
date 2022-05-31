@@ -1,8 +1,3 @@
-#root {
-  --main-blue: #1f3b78;
-  --gray: #676767;
-  --yellow: #e6ba3d;
-}
 body {
   background: url("images/bg-circle.png") no-repeat 86% 0%;
 }
@@ -157,24 +152,48 @@ body {
 /*200x143*/
 
 .side-news-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 310px;
-  float: right;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 310px;
+    float: right;
 }
 .side-news {
-  font-size: 0.875em;
-  width: 140px;
+    font-size: 0.875em;
+    width: 140px;
+    margin-top: 20px;
 }
-.side-news .city {
-  margin-top: -5px;
-  color: #666;
+.city {
+    margin-top: -5px;
+    color: #666;
 }
-.side-news i::before {
-  color: #666;
+i::before {
+    color: #666;    
 }
-.side-news a {
-  font-size: 1em;
-  text-decoration: none;
+a {
+    font-size: 1em;
+    text-decoration: none;
+}
+.secondary-news-container {
+    width: 610px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.secondary-section-news {
+    font-size: 0.875em;
+    width: 185px;
+    margin-top: 20px;
+}
+.secondary-section-news img {
+    float: left;
+    margin-right: 5px;
+}
+.no-img-news {
+    margin-top: 20px;
+    border-top: 4px dotted #e1e1e1;
+    padding-top: 10px;
+    width: 185px;
 }
