@@ -1,6 +1,20 @@
-body {
-  background: url("images/bg-circle.png") no-repeat 86% 0%;
+.search-bar.top::after {
+    content: url("images/bg-circle.png");
+    z-index: -1;
+    position: absolute;
+    right: 240px;
+    top: -192px;
 }
+.search-bar.bottom::after {
+    content: url("images/bg-circle.png");
+    display: block;
+    z-index: -1;
+    position: absolute;
+    transform: rotate(180deg);
+    left: 240px;
+    top: -197px;
+}
+
 button:hover,
 a:hover {
     filter: brightness(.85);
@@ -59,6 +73,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .search-bar .social {
   display: flex;
@@ -75,7 +90,7 @@ a:hover {
   margin-left: -10px;
 }
 .button {
-  background: rgb(36, 71, 124);
+  /* background: rgb(36, 71, 124);
   background: linear-gradient(
     180deg,
     rgba(36, 71, 124, 1) 13%,
@@ -86,7 +101,13 @@ a:hover {
   border: #fff solid 1px;
   font-size: 0.9em;
   height: 32px;
-  border-radius: 4px;
+  border-radius: 4px; */
+    height: 32px;
+    padding: 3px 12px;
+    border-radius: 4px;
+    border: none;
+    background: linear-gradient( 180deg, rgba(35,84,125,1) 0%, rgba(10,115,171,1) 82% );
+    color: #fff;
 }
 .button::before {
   border-radius: 5px;
@@ -328,9 +349,52 @@ a {
     font-size: 26px;
     margin: 0 10px 10px 0;
 }
+.aside-inner-container .trending-news .img-date {
+    text-align: right;
+    color: #666;
+    background-color: #e9e9e9;
+    font-size: 1em;
+    padding: 2px 10px 0 0;
+    width: 100%;
+}
+.aside-inner-container  .event {
+    font-size: 1.3em;
+    color: #1f3b78;
+}
 .section-group {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     height: 100%;
+}
+.container-flex.footer {
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.container-flex.footer .footer-block {
+    flex-grow: 2;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-flex.footer div img {
+    float: left;
+    margin-right: 10px;
+}
+.container-flex.footer div:nth-child(2) {
+    margin-top: 5px;
+}
+.company-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px 0;
+    align-items: center;
+}
+.company-info p {
+    font-size: .9em;
+    line-height: 1em;
+    color: #666;
 }
