@@ -55,7 +55,6 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 947px;
   margin: 0 auto;
 }
 .search {
@@ -397,4 +396,43 @@ a {
     font-size: .9em;
     line-height: 1em;
     color: #666;
+}
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 96%;
+    }
+    .logo-main-banner {
+        justify-content: space-between;
+    }
+    .logo-box img {
+        margin: 20px 0;
+        height: 90px;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .menu-toggle i {
+        padding: 24px;
+    }
+    .merchant {
+        display: none;
+    }
+    .button.editoriais,
+    .search-bar .social,
+    .search-bar.top::after,
+    .search-bar.bottom::after{
+        display: none;
+    }
+    .search-bar {
+        height: 54px;
+    }
+    /*.container-flex {*/
+    /*    justify-content: center;*/
+    /*    width: 100%;*/
+    /*}*/
+
 }
