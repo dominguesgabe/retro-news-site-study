@@ -29,11 +29,14 @@ a:hover {
   display: block;
   width: 947px;
 }
-.container-flex {
+.nav-link {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   width: 947px;
+}
+.nav-link.mobile {
+    display: none;
 }
 .nav-link a{
   cursor: pointer;
@@ -89,18 +92,6 @@ a:hover {
   margin-left: -10px;
 }
 .button {
-  /* background: rgb(36, 71, 124);
-  background: linear-gradient(
-    180deg,
-    rgba(36, 71, 124, 1) 13%,
-    rgba(2, 129, 186, 1) 100%
-  );
-  color: #fff;
-  position: relative;
-  border: #fff solid 1px;
-  font-size: 0.9em;
-  height: 32px;
-  border-radius: 4px; */
     height: 32px;
     padding: 3px 12px;
     border-radius: 4px;
@@ -140,7 +131,6 @@ a:hover {
 
 .main-article {
   height: 200px;
-  width: 610px;
   background: rgb(31, 60, 120);
   background: linear-gradient(
     180deg,
@@ -201,7 +191,6 @@ a {
     text-decoration: none;
 }
 .secondary-news-container {
-    width: 610px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -397,7 +386,7 @@ a {
     line-height: 1em;
     color: #666;
 }
-.menu-toggle {
+#menu-toggle {
     display: none;
 }
 
@@ -412,10 +401,10 @@ a {
         margin: 20px 0;
         height: 90px;
     }
-    .menu-toggle {
+    #menu-toggle {
         display: block;
     }
-    .menu-toggle i {
+    #menu-toggle i {
         padding: 24px;
     }
     .merchant {
@@ -430,9 +419,24 @@ a {
     .search-bar {
         height: 54px;
     }
-    /*.container-flex {*/
-    /*    justify-content: center;*/
-    /*    width: 100%;*/
-    /*}*/
+    #search {
+        width: 300px;
+    }
+    .search {
+        justify-content: center;
+    }
 
+    /*consertar isso*/
+    .secondary-news-container {
+        display: none;
+    }
 }
+@media (min-width: 1001px) {
+    .secondary-news-container {
+        width: 610px;
+    }
+    .main-article {
+        width: 610px;
+    }
+}
+/*.side-news-container -> entender o comportamento disso */
