@@ -27,7 +27,8 @@ a:hover {
 .container {
   margin: 0 auto;
   display: block;
-  width: 947px;
+  max-width: 947px;
+  width: 100%;
 }
 .nav-link {
   margin: 0 auto;
@@ -82,10 +83,6 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   width: 11%;
-}
-#search {
-  width: 247px;
-  height: 32px;
 }
 
 #search-btn {
@@ -168,8 +165,6 @@ a:hover {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 310px;
-    float: right;
 }
 .side-news {
     font-size: 0.875em;
@@ -187,7 +182,7 @@ button i::before {
     color: #fff;    
 }
 a {
-    font-size: 1em;
+    font-size: 1.2em;
     text-decoration: none;
 }
 .secondary-news-container {
@@ -307,7 +302,6 @@ a {
 }
 .aside-section-news {
     font-size: 0.875em;
-    max-width: 240px;
 }
 .aside-section-news .impotant-info{
     max-width: 100%;
@@ -391,6 +385,9 @@ a {
 }
 
 @media (max-width: 600px) {
+    .line-spacing {
+        margin: 20px auto 0;
+    }
     .container {
         width: 96%;
     }
@@ -419,16 +416,43 @@ a {
     .search-bar {
         height: 54px;
     }
+    .search form {
+        width: 100%;
+        text-align: center;
+    }
+    .search button {
+        max-width: 30%;
+    }
     #search {
-        width: 300px;
+        width: 70%
     }
-    .search {
-        justify-content: center;
+    .busca .button {
+        width: 28%
     }
-
-    /*consertar isso*/
     .secondary-news-container {
-        display: none;
+        display: none; /*TODO fix*/
+    }
+    .marketing-unisul {
+        height: 64px;
+        object-fit: cover;
+    }
+    .side-news-container {
+        justify-content: space-around;
+    }
+    .side-news {
+        width: 33%;
+    }
+    .aside-section-news {
+        width: 100%;
+    }
+    .impotant-info {
+        width: 100%;
+    }
+    .aside-inner-container .trending-news {
+        margin: 15px 0;
+    }
+    .trending-news i {
+        font-size: 1.5em;
     }
 }
 @media (min-width: 1001px) {
@@ -437,6 +461,25 @@ a {
     }
     .main-article {
         width: 610px;
+    }
+    #search {
+        width: 247px;
+        height: 32px;
+    }
+    .menu-bar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .container.footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    .side-news-container {
+        width: 310px;
+        float: right;
+    }
+    .aside-section-news {
+        max-width: 240px;
     }
 }
 /*.side-news-container -> entender o comportamento disso */
