@@ -30,31 +30,7 @@ a:hover {
   max-width: 947px;
   width: 100%;
 }
-.nav-link {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  width: 947px;
-}
-.nav-link.mobile {
-    display: none;
-}
-.nav-link a{
-  cursor: pointer;
-  color: #1f3b78;
-  text-decoration: none;
-}
-.nav-link li::after {
-  content: "";
-  display: inline-block;
-  width: 1px;
-  height: 10px;
-  margin-left: 13px;
-  background-color: #1f3b78;
-}
-.nav-link li:last-child::after {
-  display: none;
-}
+
 .logo-main-banner {
   display: flex;
   justify-content: space-between;
@@ -393,6 +369,7 @@ a {
     }
     .logo-main-banner {
         justify-content: space-between;
+        position: relative;
     }
     .logo-box img {
         margin: 20px 0;
