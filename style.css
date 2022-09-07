@@ -136,16 +136,19 @@ a:hover {
   line-height: 16px;
   margin-top: 10px;
 }
-.side-news-container {
+.news-link-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.side-news {
+.news-link {
     font-size: 0.875em;
+    display: inline-block;
+}
+.news-link > div {
+    display: inline-block;
     width: 140px;
-    margin-top: 20px;
 }
 .city {
     margin-top: -5px;
@@ -166,7 +169,7 @@ a {
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 100%;
+    max-width: 610px;
 }
 .secondary-section-news {
     font-size: 0.875em;
@@ -279,9 +282,6 @@ a {
 .aside-section-news {
     font-size: 0.875em;
 }
-.aside-section-news .impotant-info{
-    max-width: 100%;
-}
 .aside-section-news .secondary-news-container {
     width: 610px;
     display: flex;
@@ -289,17 +289,17 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
 }
-.second-line-section .aside-news-container {
+.second-line-section .news-link-container {
     margin-top: 45px;
 }
-.second-line-section .aside-news-container .aside-inner-container {
+.second-line-section .news-link-container .aside-inner-container {
     flex-direction: column;
     justify-content: space-between;
     padding: 0 24px;
     display: flex;
 }
 .aside-inner-container .trending-news {
-    margin: 20px auto;
+    margin: 20px auto 20px 20px;
 }
 .aside-inner-container .trending-news div {
     float: left;
@@ -359,6 +359,10 @@ a {
 #menu-toggle {
     display: none;
 }
+.main-block-secondary-news {
+    display: flex;
+    justify-content: space-between;
+}
 
 @media (max-width: 600px) {
     .line-spacing {
@@ -406,38 +410,42 @@ a {
     .busca .button {
         width: 28%
     }
-    .secondary-news-container {
-        display: none; /*TODO fix*/
-    }
     .marketing-unisul {
         height: 64px;
         object-fit: cover;
     }
-    .side-news-container {
-        justify-content: space-around;
-    }
-    .side-news {
-        width: 33%;
-    }
-    .aside-section-news {
-        width: 100%;
-    }
-    .impotant-info {
-        width: 100%;
-    }
-    .aside-inner-container .trending-news {
-        margin: 15px 0;
-    }
-    .trending-news i {
-        font-size: 1.5em;
-    }
+    /*.news-link-container {*/
+    /*    justify-content: space-around;*/
+    /*}*/
+    /*.news-link {*/
+    /*    width: 33%;*/
+    /*}*/
+
+    /*.aside-inner-container .trending-news {*/
+    /*    margin: 15px 0;*/
+    /*}*/
+    /*.trending-news i {*/
+    /*    font-size: 1.5em;*/
+    /*}*/
 }
 @media (min-width: 1001px) {
-    .secondary-news-container {
-        width: 610px;
+    aside {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: flex-start;
+    }
+    aside.main {
+        max-width: 310px;
+    }
+    .container-with-aside {
+        display: flex;
+        justify-content: space-between;
     }
     .main-article {
         width: 610px;
+        float: none;
+        display: block;
     }
     #search {
         width: 247px;
@@ -451,12 +459,10 @@ a {
         display: flex;
         justify-content: space-between;
     }
-    .side-news-container {
-        width: 310px;
-        float: right;
+    .news-link-container {
+        width: 100%;
     }
     .aside-section-news {
         max-width: 240px;
     }
 }
-/*.side-news-container -> entender o comportamento disso */
