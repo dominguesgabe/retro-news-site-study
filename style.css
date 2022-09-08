@@ -446,6 +446,11 @@ a {
         height: 140px;
         object-fit: cover;
     }
+    .marketing-hangar,
+    .marketing-dago {
+        width: 100%;
+        object-fit: cover;
+    }
     .secondary-news-container {
         flex-direction: row;
         justify-content: space-around;
@@ -457,6 +462,15 @@ a {
     .impotant-info {
         width: 100%;
         margin-top: 40px;
+    }
+    .secondary-news-container a:nth-child(2) {
+        margin-top: 20px;
+    }
+    .aside-inner-container .trending-news {
+        margin: 20px 20%;
+    }
+    .impotant-info .btn-full {
+        height: 50px;
     }
 }
 @media (min-width: 1001px) {
