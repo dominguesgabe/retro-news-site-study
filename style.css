@@ -443,7 +443,7 @@ a {
         object-fit: cover;
     }
     .marketing-farol {
-        height: 140px;
+        height: 110px;
         object-fit: cover;
     }
     .marketing-hangar,
@@ -471,6 +471,24 @@ a {
     }
     .impotant-info .btn-full {
         height: 50px;
+    }
+}
+@media (max-width: 460px) {
+    .container-with-aside article {
+        display: flex;
+        justify-content: center;
+    }
+    .main-article {
+        height: 300px;
+        width: 80%;
+        padding: 22px;
+    }
+    .main-article img {
+        float: none;
+        margin: 0 auto;
+    }
+    .main-article .title {
+        font-size: 1.2em;
     }
 }
 @media (min-width: 1001px) {
@@ -504,9 +522,8 @@ a {
         display: flex;
         justify-content: space-between;
     }
-    .news-link-container {
-        width: 100%;
-    }
+    /*.news-link-container {*/
+    /*}*/
     .aside-section-news {
         max-width: 240px;
     }
