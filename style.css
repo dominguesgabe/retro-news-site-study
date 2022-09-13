@@ -474,8 +474,9 @@ a {
         margin-top: 20px;
     }
     .impotant-info .btn-full {
-        height: 50px;
+        height: 35px;
     }
+    .marketing-twitter,
     .logo-rodape {
         margin: 0 auto;
     }
@@ -493,7 +494,7 @@ a {
     .main-article {
         height: 300px;
         width: 90%;
-        padding: 13px 15%;
+        padding: 13px 9%;
     }
     .main-article img {
         float: none;
