@@ -1,12 +1,12 @@
 .search-bar.top::after {
-    content: url("images/bg-circle.png");
+    content: url("/images/webp/bg-circle.webp");
     z-index: -1;
     position: absolute;
     right: 240px;
     top: -192px;
 }
 .search-bar.bottom::after {
-    content: url("images/bg-circle.png");
+    content: url("/images/webp/bg-circle.webp");
     display: block;
     z-index: -1;
     position: absolute;
@@ -209,7 +209,7 @@ a {
     content: '';
     width: 43px;
     height: 52px;
-    background-image: url("images/title-decorator.png");
+    background-image: url("/images/webp/title-decorator.webp");
     position: absolute;
     z-index: 1;
     top: -14px;
