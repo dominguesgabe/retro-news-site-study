@@ -26,7 +26,6 @@ a:hover {
 }
 .container {
   margin: 0 auto;
-  display: block;
   max-width: 947px;
   width: 100%;
 }
@@ -84,8 +83,6 @@ a:hover {
   left: 0;
   bottom: 0;
   right: 0;
-  /* position: absolute; */
-  /* z-index:1; */
   width: 86px;
   height: 25px;
 }
@@ -170,6 +167,7 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 610px;
+    width: 100%;
 }
 .secondary-section-news {
     font-size: 0.875em;
@@ -203,6 +201,7 @@ a {
     margin-bottom: 20px;
     font-style: italic;
     margin-left: 21px;
+    font-weight: 400;
 }
 .impotant-info .title::before {
     display: block;
@@ -224,11 +223,12 @@ a {
     flex-direction: column;
     justify-content: space-between;
     height: 360px;
+    margin-bottom: 12px;
 }
 .impotant-info .enquete {
     color: #1f3b78;
 }
-.impotant-info p,
+.impotant-info div,
 .impotant-info label {
     color: #666;
 }
@@ -246,11 +246,13 @@ a {
     color: #fff;
 }
 .impotant-info .btn-full {
+    display: inline-block;
+    margin-top: 10px;
     width: 100%;
-    padding-top: 6px;
+    padding: 4px 0 0 10px;
+    font-size: 1em;
     border-radius: 0 4px 4px 0 ;
     border: none;
-    margin-top: 10px;
     background: linear-gradient(
         180deg,
         rgba(35,84,125,1) 0%,
@@ -348,7 +350,6 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 40px 0;
     align-items: center;
 }
 .company-info p {
@@ -491,6 +492,9 @@ a {
         display: flex;
         justify-content: center;
     }
+    /*.container-with-aside:nth-child(3) article {*/
+    /*    flex-direction: column;*/
+    /*}*/
     .main-article {
         height: 300px;
         width: 90%;

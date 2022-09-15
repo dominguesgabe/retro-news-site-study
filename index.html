@@ -5,18 +5,18 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="nav.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        <link rel="preload stylesheet" href="/reset.css">
+        <link rel="preload stylesheet" href="style.css">
+        <link rel="preload stylesheet" href="/nav.css">
+        <link rel="preload stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
             integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>Sul in foco</title>
     </head>
 
     <body>
-        <nav class="drop-shadow nav mobile">
-            <ul class="container">
+        <nav class="drop-shadow mobile">
+            <ul>
                 <li>
                     <a href="#">
                         Quem Somos
@@ -105,7 +105,7 @@
                     <div class="search">
                         <button class="button editoriais">Editoriais <i class="fa-solid fa-caret-down"></i></button>
                         <form method="post" class=busca">
-                            <input id="search" type="text" name="name" placeholder="Digite o que procura">
+                            <input type="text" name="name" placeholder="Digite o que procura">
                             <input type="submit" class="button" value="BUSCAR">
                         </form>
                     </div>
@@ -138,8 +138,8 @@
             <div class="line-spacing">
                 <img src="/images/webp/passaporte-unisul.webp" class="marketing-unisul" alt="passaporte unisul">
             </div>
-            <div class="container-with-aside">
-                <div class="line-spacing">
+            <section class="container-with-aside">
+                <section class="line-spacing">
                     <section>
                         <article>
                             <div class="main-article">
@@ -154,228 +154,228 @@
                                 </p>
                             </div>
                         </article>
-                        <div class="main-block-secondary-news">
-                            <div class="news-link">
+                        <article class="main-block-secondary-news">
+                            <article class="news-link">
                                 <div>
-                                    <p class="city">Siderópolis</p>
+                                    <h5 class="city">Siderópolis</h5>
                                     <img src="/images/webp/imagem-ciclismo-sideropolis.webp" alt="ciclismo em siderópolis">
-                                    <p>
+                                    <div>
                                         <i class="fa-solid fa-camera"></i> 04
-                                    </p>
+                                    </div>
                                     <a href="#">Passeio ciclístico movimenta a cidade neste Sábado</a>
                                 </div>
-                            </div>
-                            <div class="news-link">
+                            </article>
+                            <article class="news-link">
                                 <div>
-                                    <p class="city">Siderópolis</p>
+                                    <h5 class="city">Siderópolis</h5>
                                     <img src="/images/webp/imagem-ciclismo-sideropolis.webp" alt="ciclismo em siderópolis">
-                                    <p>
-                                        <i class="fa-solid fa-camera"></i> 04
-                                        <i class="fa-solid fa-video"></i> 01
-                                    </p>
-                                    <a href="#">Passeio ciclístico movimenta a cidade neste Sábado</a>
-                                </div>
-                            </div>
-                            <div class="news-link">
-                                <div>
-                                    <p class="city">Siderópolis</p>
-                                    <img src="/images/webp/imagem-ciclismo-sideropolis.webp" alt="ciclismo em siderópolis">
-                                    <p>
+                                    <div>
                                         <i class="fa-solid fa-camera"></i> 04
                                         <i class="fa-solid fa-video"></i> 01
-                                    </p>
+                                    </div>
                                     <a href="#">Passeio ciclístico movimenta a cidade neste Sábado</a>
                                 </div>
-                            </div>
-                            <div class="news-link">
+                            </article>
+                            <article class="news-link">
                                 <div>
-                                    <p class="city">Siderópolis</p>
+                                    <h5 class="city">Siderópolis</h5>
                                     <img src="/images/webp/imagem-ciclismo-sideropolis.webp" alt="ciclismo em siderópolis">
-                                    <p>
+                                    <div>
                                         <i class="fa-solid fa-camera"></i> 04
-                                    </p>
+                                        <i class="fa-solid fa-video"></i> 01
+                                    </div>
                                     <a href="#">Passeio ciclístico movimenta a cidade neste Sábado</a>
                                 </div>
+                            </article>
+                            <article class="news-link">
+                                <div>
+                                    <h5 class="city">Siderópolis</h5>
+                                    <img src="/images/webp/imagem-ciclismo-sideropolis.webp" alt="ciclismo em siderópolis">
+                                    <div>
+                                        <i class="fa-solid fa-camera"></i> 04
+                                    </div>
+                                    <a href="#">Passeio ciclístico movimenta a cidade neste Sábado</a>
+                                </div>
+                            </article>
+                        </article>
+                    </section>
+                </section>
+                <aside class="line-spacing main">
+                    <section class="news-link">
+                        <div>
+                            <h5 class="city">Siderópolis</h5>
+                            <img src="/images/webp/imagem-ciclismo-sideropolis.webp" alt="ciclismo em siderópolis">
+                            <div>
+                                <i class="fa-solid fa-camera"></i> 04
                             </div>
+                            <a href="#">Passeio ciclístico movimenta a cidade neste Sábado</a>
                         </div>
                     </section>
-                </div>
-                <aside class="line-spacing main">
-                    <div class="news-link">
+                    <section class="news-link">
                         <div>
-                            <p class="city">Siderópolis</p>
+                            <h5 class="city">Siderópolis</h5>
                             <img src="/images/webp/imagem-ciclismo-sideropolis.webp" alt="ciclismo em siderópolis">
-                            <p>
-                                <i class="fa-solid fa-camera"></i> 04
-                            </p>
-                            <a href="#">Passeio ciclístico movimenta a cidade neste Sábado</a>
-                        </div>
-                    </div>
-                    <div class="news-link">
-                        <div>
-                            <p class="city">Siderópolis</p>
-                            <img src="/images/webp/imagem-ciclismo-sideropolis.webp" alt="ciclismo em siderópolis">
-                            <p>
+                            <div>
                                 <i class="fa-solid fa-camera"></i> 04
                                 <i class="fa-solid fa-video"></i> 01
-                            </p>
+                            </div>
                             <a href="#">Passeio ciclístico movimenta a cidade neste Sábado</a>
                         </div>
-                    </div>
+                    </section>
                     <div class="line-spacing">
                         <img src="/images/webp/criciua-construcoes.webp" class="marketing-criciuma" alt="Criciúma Construções">
                     </div>
                 </aside>
-            </div>
-            <div class="line-spacing">
+            </section>
+            <section class="line-spacing">
                 <a href="http://farolshopping.com.br/" target="_blank">
                     <img src="/images/webp/farol-shopping.webp" class="marketing-farol" alt="Farol Shopping">
                 </a>
-            </div>
-            <div class="container-with-aside">
+            </section>
+            <section class="container-with-aside">
                 <div class="section-group">
                     <section class="secondary-news-container">
-                        <div class="secondary-section-news">
-                            <p class="city">Polícia</p>
+                        <section class="secondary-section-news">
+                            <h5 class="city">Polícia</h5>
                             <a href="#" target="_blank" rel="noopener noreferrer">
                                 <img src="/images/webp/policia-apreende-drogas.webp" alt="Polícia apreende drogas">
                             </a>
-                            <p>
+                            <div>
                                 <i class="fa-solid fa-camera"></i> 04
                                 <i class="fa-solid fa-video"></i> 02
                                 <i class="fa-solid fa-volume-high"></i> 01
-                            </p>
+                            </div>
                             <a href="#">Polícia encontra pinos de cocaína com três jovens</a>
-                        </div>
-                        <div class="secondary-section-news">
-                            <p class="city">Jogos abertos</p>
+                        </section>
+                        <section class="secondary-section-news">
+                            <h5 class="city">Jogos abertos</h5>
                             <a href="#" target="_blank" rel="noopener noreferrer">
                                 <img src="/images/webp/volei-jasc.webp" alt="Time de Tubarão de vôlei">
                             </a>
-                            <p>
+                            <div>
                                 <i class="fa-solid fa-camera"></i> 04
                                 <i class="fa-solid fa-volume-high"></i> 03
-                            </p>
+                            </div>
                             <a href="#">Time de Vôlei de Tubarão<br> vai bem no JASC</a>
-                        </div>
-                        <div class="secondary-section-news">
-                            <p class="city">Siderópolis</p>
+                        </section>
+                        <section class="secondary-section-news">
+                            <h5 class="city">Siderópolis</h5>
                             <a href="#" target="_blank" rel="noopener noreferrer">
                                 <img src="/images/webp/imagem-ciclismo-sideropolis-g.webp" alt="ciclismo em siderópolis">
                             </a>
-                            <p>
+                            <div>
                                 <i class="fa-solid fa-camera"></i> 04
                                 <i class="fa-solid fa-volume-high"></i> 03
-                            </p>
+                            </div>
                             <a href="#">Passeio ciclístico<br> movimenta a cidade</a>
-                        </div>
-                        <div class="secondary-section-news">
-                            <p class="city">Polícia</p>
+                        </section>
+                        <section class="secondary-section-news">
+                            <h5 class="city">Polícia</h5>
                             <a href="#" target="_blank" rel="noopener noreferrer">
                                 <img src="/images/webp/policia-apreende-drogas.webp" alt="Polícia apreende drogas">
                             </a>
-                            <p>
+                            <div>
                                 <i class="fa-solid fa-camera"></i> 04
                                 <i class="fa-solid fa-video"></i> 02
                                 <i class="fa-solid fa-volume-high"></i> 01
-                            </p>
+                            </div>
                             <a href="#">Polícia encontra pinos de cocaína com três jovens</a>
-                        </div>
-                        <div class="secondary-section-news">
-                            <p class="city">Jogos abertos</p>
+                        </section>
+                        <section class="secondary-section-news">
+                            <h5 class="city">Jogos abertos</h5>
                             <a href="#" target="_blank" rel="noopener noreferrer">
                                 <img src="/images/webp/volei-jasc-video.webp" alt="Time de Tubarão de vôlei">
                             </a>
-                            <p>
+                            <div>
                                 <i class="fa-solid fa-video"></i> 06
                                 <i class="fa-solid fa-volume-high"></i> 01
-                            </p>
+                            </div>
                             <a href="#">Time de Vôlei de Tubarão<br> vai bem no JASC</a>
-                        </div>
-                        <div class="secondary-section-news">
-                            <p class="city">Siderópolis</p>
+                        </section>
+                        <section class="secondary-section-news">
+                            <h5 class="city">Siderópolis</h5>
                             <a href="#" target="_blank" rel="noopener noreferrer">
                                 <img src="/images/webp/imagem-ciclismo-sideropolis-g.webp" alt="ciclismo em siderópolis">
                             </a>
-                            <p>
+                            <div>
                                 <i class="fa-solid fa-camera"></i> 01
                                 <i class="fa-solid fa-volume-high"></i> 02
-                            </p>
+                            </div>
                             <a href="#">Passeio ciclístico<br> movimenta a cidade</a>
-                        </div>
+                        </section>
                     </section>
                     <section class="secondary-news-container">
-                        <div class="no-img-news">
+                        <section class="no-img-news">
                             <a href="#">
                                 Polícia encontra pinos de cocaína com três jovens
                             </a>
-                            <p>
+                            <div>
                                 <i class="fa-solid fa-camera"></i> 03
                                 <i class="fa-solid fa-video"></i> 01
                                 <i class="fa-solid fa-volume-high"></i> 01
-                            </p>
-                        </div>
-                        <div class="no-img-news">
+                            </div>
+                        </section>
+                        <section class="no-img-news">
                             <a href="#">
                                 Polícia encontra pinos de cocaína com três jovens
                             </a>
-                            <p>
+                            <div>
                                 <i class="fa-solid fa-camera"></i> 03
                                 <i class="fa-solid fa-video"></i> 01
                                 <i class="fa-solid fa-volume-high"></i> 01
-                            </p>
-                        </div>
-                        <div class="no-img-news">
+                            </div>
+                        </section>
+                        <section class="no-img-news">
                             <a href="#">
                                 Polícia encontra pinos de cocaína com três jovens
                             </a>
-                            <p>
+                            <div>
                                 <i class="fa-solid fa-camera"></i> 03
                                 <i class="fa-solid fa-video"></i> 01
                                 <i class="fa-solid fa-volume-high"></i> 01
-                            </p>
-                        </div>
-                        <div class="no-img-news">
+                            </div>
+                        </section>
+                        <section class="no-img-news">
                             <a href="#">
                                 Polícia encontra pinos de cocaína com três jovens
                             </a>
-                            <p>
+                            <div>
                                 <i class="fa-solid fa-camera"></i> 03
                                 <i class="fa-solid fa-video"></i> 01
                                 <i class="fa-solid fa-volume-high"></i> 01
-                            </p>
-                        </div>
-                        <div class="no-img-news">
+                            </div>
+                        </section>
+                        <section class="no-img-news">
                             <a href="#">
                                 Polícia encontra pinos de cocaína com três jovens
                             </a>
-                            <p>
+                            <div>
                                 <i class="fa-solid fa-camera"></i> 03
                                 <i class="fa-solid fa-video"></i> 01
                                 <i class="fa-solid fa-volume-high"></i> 01
-                            </p>
-                        </div>
-                        <div class="no-img-news">
+                            </div>
+                        </section>
+                        <section class="no-img-news">
                             <a href="#">
                                 Polícia encontra pinos de cocaína com três jovens
                             </a>
-                            <p>
+                            <div>
                                 <i class="fa-solid fa-camera"></i> 03
                                 <i class="fa-solid fa-video"></i> 01
                                 <i class="fa-solid fa-volume-high"></i> 01
-                            </p>
-                        </div>
+                            </div>
+                        </section>
                     </section>
-                    <div class="line-spacing">
+                    <section class="line-spacing">
                         <a href="http://socimed.com.br/" target="_blank">
                             <img src="/images/webp/centro-socimed.webp" alt="Socimed">
                         </a>
-                    </div>
+                    </section>
                     <div class="line-spacing secondary-news-container">
                         <div class="impotant-info">
-                            <div class="title">
+                            <h3 class="title">
                                 ENQUETE
-                            </div>
+                            </h3>
                             <div class="inner-container">
                                 <label>
                                     <span class="enquete">
@@ -398,16 +398,16 @@
                                 </label><br>
                                 <button type="submit" class="submit">VOTAR</button>
                             </div>
-                            <button class="btn-full">VER TODAS AS ENQUETES</button>
+                            <a href="#" class="btn-full">VER TODAS AS ENQUETES</a>
                         </div>
                         <div class="impotant-info">
-                            <div class="title">
+                            <h3 class="title">
                                 MURAL DE RECADOS
-                            </div>
+                            </h3>
                             <div class="inner-container">
                                 <div class="message">
                                     <p>
-                                        "Parabéns a Criciúma pelo grande trabalho de organização do JASC"
+                                        <q>Parabéns a Criciúma pelo grande trabalho de organização do JASC</q>
                                     </p>
                                     <p class="sender">
                                         Antônio Nunes
@@ -415,7 +415,7 @@
                                 </div>
                                 <div class="message">
                                     <p>
-                                        "Parabéns a Criciúma pelo grande trabalho de organização do JASC"
+                                        <q>Parabéns a Criciúma pelo grande trabalho de organização do JASC</q>
                                     </p>
                                     <p class="sender">
                                         Antônio Nunes
@@ -423,7 +423,7 @@
                                 </div>
                                 <div class="message">
                                     <p>
-                                        "Parabéns a Criciúma pelo grande trabalho de organização do JASC"
+                                        <q>Parabéns a Criciúma pelo grande trabalho de organização do JASC</q>
                                     </p>
                                     <p class="sender">
                                         Antônio Nunes
@@ -431,7 +431,7 @@
                                 </div>
                                 <button type="submit" class="submit">ENVIAR RECADO&nbsp;<i class="fa-solid fa-message"></i></button>
                             </div>
-                            <button class="btn-full">VER TODAS AS ENQUETES</button>
+                            <a href="#" class="btn-full">VER TODAS AS ENQUETES</a>
                         </div>
                         <div class="line-spacing secondary-news-container">
                             <a href="hangar.com.br" target="_blank">
@@ -447,11 +447,11 @@
                     <img src="/images/webp/previsao-do-tempo.webp" alt="Previsão do tempo" class="line-spacing">
                     <div class="line-spacing news-link-container">
                         <div class="impotant-info">
-                            <div class="title">
+                            <h3 class="title">
                                 AS MAIS LIDAS
-                            </div>
+                            </h3>
                             <div class="aside-inner-container">
-                                <div class="trending-news">
+                                <section class="trending-news">
                                     <div><i>01</i></div>
                                     <p>
                                         <a href="#">
@@ -460,8 +460,8 @@
                                     </p>
                                     <i class="fa-solid fa-camera"></i> 01
                                     <i class="fa-solid fa-volume-high"></i> 02
-                                </div>
-                                <div class="trending-news">
+                                </section>
+                                <section class="trending-news">
                                     <div><i>02</i></div>
                                     <p>
                                         <a href="#">
@@ -470,8 +470,8 @@
                                     </p>
                                     <i class="fa-solid fa-camera"></i> 04
                                     <i class="fa-solid fa-volume-high"></i> 02
-                                </div>
-                                <div class="trending-news">
+                                </section>
+                                <section class="trending-news">
                                     <div><i>03</i></div>
                                     <p>
                                         <a href="#">
@@ -479,8 +479,8 @@
                                         </a>
                                     </p>
                                     <i class="fa-solid fa-volume-high"></i> 02
-                                </div>
-                                <div class="trending-news">
+                                </section>
+                                <section class="trending-news">
                                     <div><i>04</i></div>
                                     <p>
                                         <a href="#">
@@ -489,8 +489,8 @@
                                     </p>
                                     <i class="fa-solid fa-camera"></i> 01
                                     <i class="fa-solid fa-volume-high"></i> 06
-                                </div>
-                                <div class="trending-news">
+                                </section>
+                                <section class="trending-news">
                                     <div><i>05</i></div>
                                     <p>
                                         <a href="#">
@@ -499,9 +499,9 @@
                                     </p>
                                     <i class="fa-solid fa-camera"></i> 12
                                     <i class="fa-solid fa-volume-high"></i> 02
-                                </div>
+                                </section>
                             </div>
-                            <button class="btn-full">VER TODAS AS ENQUETES</button>
+                            <a href="#" class="btn-full">VER TODAS AS ENQUETES</a>
                         </div>
                     </div>
                     <div class="line-spacing">
@@ -510,39 +510,37 @@
                         </a>
                     </div>
                     <div class="impotant-info line-spacing news-link-container container">
-                        <div>
-                            <div class="title">
-                                GALERIA DE FOTOS
-                            </div>
-                            <div class="aside-inner-container">
-                                <div class="line-spacing">
-                                    <span class="event">
-                                        FEINCOS
-                                    </span>
-                                    <img src="/images/webp/feincos.webp" alt="Feinco 2011">
-                                    <div class="img-date">22/12/2011</div>
-                                </div>
-                            </div>
-                            <div class="aside-inner-container">
-                                <div class="line-spacing">
-                                    <span class="event">
-                                        CARNAFACUL
-                                    </span>
-                                    <img src="/images/webp/carnaful.webp" alt="Carnafacul">
-                                    <div class="img-date">02/12/2011</div>
-                                </div>
+                        <h3 class="title">
+                            GALERIA DE FOTOS
+                        </h3>
+                        <div class="aside-inner-container">
+                            <div class="line-spacing">
+                                <span class="event">
+                                    FEINCOS
+                                </span>
+                                <img src="/images/webp/feincos.webp" alt="Feinco 2011">
+                                <div class="img-date">22/12/2011</div>
                             </div>
                         </div>
-                        <button class="btn-full">VER TODAS AS FOTOS</button>
+                        <div class="aside-inner-container">
+                            <div class="line-spacing">
+                                <span class="event">
+                                    CARNAFACUL
+                                </span>
+                                <img src="/images/webp/carnaful.webp" alt="Carnafacul">
+                                <div class="img-date">02/12/2011</div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-full">VER TODAS AS FOTOS</a>
                     </div>
                 </aside>
-            </div>
+            </section>
         </main>
         <div class="search-bar bottom line-spacing">
             <div class="container menu-bar">
                 <div class="search">
-                    <form action="" method="get">
-                        <input id="search2" type="text" name="name" placeholder="Digite o que procura">
+                    <form action="" method="post">
+                        <input type="text" name="name" placeholder="Digite o que procura">
                         <input type="submit" class="button" value="BUSCAR">
                     </form>
                 </div>
@@ -575,25 +573,34 @@
                 <span>
                     <img src="/images/webp/logo-footer.webp" class="logo-rodape" alt="Logo SulInFoco">
                 </span>
-                <div class="footer-block">
+                <section class="footer-block">
                     <div>
-                        <img src="/images/webp/telephone.webp" alt="telefone">
+                        <a href="tel:+48612341243">
+                            <img src="/images/webp/telephone.webp" alt="telefone">
+                        </a>
                         <span>Fone/Fax: (48) 1234-1243</span>
                     </div>
                     <div>
-                        <img src="/images/webp/email.webp" alt="email">
+                        <a href="mailto:contato@sulinfoco.com.br">
+                            <img src="/images/webp/email.webp" alt="email">
+                        </a>
                         <span>contato@sulinfoco.com.br</span>
                     </div>
-                </div>
+                </section>
                 <span>
-                    <img src="/images/webp/twitter-banner.webp" class="marketing-twitter" alt="Twitter SulInFoco">
+                    <a href="https://twitter.com/sulinfoco">
+                        <img src="/images/webp/twitter-banner.webp" class="marketing-twitter" alt="Twitter SulInFoco">
+                    </a>
                 </span>
             </div>
             <div class="container">
                 <span class="company-info">
-                    <p>Rua Amilcar Silva, 123 - Centro - Braço do Norte - Santa Catarina<br>Sul In Foco - Portal de Notícias Todos os Direitos Reservados 😳 2012.
+                    <p>
+                        Rua Amilcar Silva, 123 - Centro - Braço do Norte - Santa Catarina<br>Sul In Foco - Portal de Notícias Todos os Direitos Reservados 😳 2012.
                     </p>
-                    <img src="/images/webp/logo-idealize.webp" alt="Idealize">
+                    <a href="https://climba.com.br">
+                        <img src="/images/webp/logo-idealize.webp" alt="Idealize">
+                    </a>
                 </span>
             </div>
         </footer>
