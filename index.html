@@ -5,12 +5,12 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preload stylesheet" href="/reset.css">
-        <link rel="preload stylesheet" href="style.css">
-        <link rel="preload stylesheet" href="/nav.css">
+        <link rel="preload stylesheet" href="/reset.css" as="style">
+        <link rel="preload stylesheet" href="style.css" as="style">
+        <link rel="preload stylesheet" href="/nav.css" as="style">
         <link rel="preload stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
             integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
+            crossorigin="anonymous" referrerpolicy="no-referrer" as="style" />
         <title>Sul in foco</title>
     </head>
 
@@ -135,9 +135,9 @@
             </div>
         </header>
         <main class="container">
-            <div class="line-spacing">
+            <section class="line-spacing">
                 <img src="/images/webp/passaporte-unisul.webp" class="marketing-unisul" alt="passaporte unisul">
-            </div>
+            </section>
             <section class="container-with-aside">
                 <section class="line-spacing">
                     <section>
@@ -376,7 +376,7 @@
                             <h3 class="title">
                                 ENQUETE
                             </h3>
-                            <div class="inner-container">
+                            <form class="inner-container">
                                 <label>
                                     <span class="enquete">
                                         <i>
@@ -384,20 +384,20 @@
                                         </i>
                                     </span><br>
                                     <div class="line-spacing">
-                                        <input type="radio" name="enquete_ponte" id="opcao_1" value="1"> Sim, pois é uma obra de grande valia para a população.
+                                        <input type="radio" name="enquete_ponte" value="1"> Sim, pois é uma obra de grande valia para a população.
                                     </div>
                                 </label><br>
                                 <label>
-                                    <input type="radio" name="enquete_ponte" id="opcao_2" value="2"> Não, poderia ser uma ponte mais simples.
+                                    <input type="radio" name="enquete_ponte" value="2"> Não, poderia ser uma ponte mais simples.
                                 </label><br>
                                 <label>
-                                    <input type="radio" name="enquete_ponte" id="opcao_3" value="3"> Não tenho uma opinião formada.
+                                    <input type="radio" name="enquete_ponte" value="3"> Não tenho uma opinião formada.
                                 </label><br>
                                 <label>
-                                    <input type="radio" name="enquete_ponte" id="opcao_4" value="4"> Não, devido aos problemas ambientais.
+                                    <input type="radio" name="enquete_ponte" value="4"> Não, devido aos problemas ambientais.
                                 </label><br>
-                                <button type="submit" class="submit">VOTAR</button>
-                            </div>
+                                <input type="submit" class="submit" value="VOTAR" />
+                            </form>
                             <a href="#" class="btn-full">VER TODAS AS ENQUETES</a>
                         </div>
                         <div class="impotant-info">
