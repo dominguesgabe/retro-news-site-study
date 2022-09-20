@@ -1,18 +1,19 @@
-.search-bar.top::after {
-    content: url("/images/webp/bg-circle.webp");
+.search-bar.top .container.menu-bar::after {
+    content: url(/images/webp/bg-circle.webp);
     z-index: -1;
     position: absolute;
-    right: 240px;
-    top: -192px;
+    left: 100%;
+    top: -200px;
+    margin-left: 20px;
 }
-.search-bar.bottom::after {
-    content: url("/images/webp/bg-circle.webp");
-    display: block;
+.search-bar.bottom .container.menu-bar::after {
+    content: url(/images/webp/bg-circle.webp);
+    transform: rotate(180deg);
     z-index: -1;
     position: absolute;
-    transform: rotate(180deg);
-    left: 240px;
-    top: -197px;
+    right: 100%;
+    top: -207px;
+    margin-right: 20px;
 }
 input[type="submit"]:hover,
 button:hover,
@@ -29,6 +30,7 @@ a:hover {
   margin: 0 auto;
   max-width: 947px;
   width: 100%;
+    position: relative;
 }
 
 .logo-main-banner {
@@ -366,7 +368,13 @@ a {
     justify-content: space-between;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1409px) {
+    .search-bar.top .container.menu-bar::after,
+    .search-bar.bottom .container.menu-bar::after {
+        display: none;
+    }
+}
+    @media (max-width: 600px) {
     .line-spacing {
         margin: 20px auto 0;
     }
@@ -392,9 +400,7 @@ a {
         display: none;
     }
     .button.editoriais,
-    .search-bar .social,
-    .search-bar.top::after,
-    .search-bar.bottom::after{
+    .search-bar .social {
         display: none;
     }
     .search-bar {
